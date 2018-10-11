@@ -1,0 +1,66 @@
+junit.rnc: 
+#---------------------------------------------------------------------------------- 
+start = testsuite 
+
+property = element property { 
+   attribute name {text}, 
+   attribute value {text} 
+} 
+
+properties = element properties { 
+   property* 
+} 
+
+failure = element failure { 
+   attribute message {text}, 
+   attribute type {text}, 
+   text 
+} 
+
+testcase = element testcase { 
+   attribute classname {text}, 
+   attribute name {text}, 
+   attribute time {text}, 
+   failure? 
+} 
+
+testsuite = element testsuite { 
+   attribute errors {xsd:integer}, 
+   attribute failures {xsd:integer}, 
+   attribute hostname {text}, 
+   attribute name {text}, 
+   attribute tests {xsd:integer}, 
+   attribute time {xsd:double}, 
+   attribute timestamp {xsd:dateTime}, 
+   properties, 
+   testcase*, 
+   element system-out {text}, 
+   element system-err {text} 
+} 
+#---------------------------------------------------------------------------------- 
+
+
+and junitreport.rnc 
+#---------------------------------------------------------------------------------- 
+include "junit.rnc" { 
+   start = testsuites 
+   testsuite = element testsuite { 
+      attribute errors {xsd:integer}, 
+      attribute failures {xsd:integer}, 
+      attribute hostname {text}, 
+      attribute name {text}, 
+      attribute tests {xsd:integer}, 
+      attribute time {xsd:double}, 
+      attribute timestamp {xsd:dateTime}, 
+      attribute id {text}, 
+      attribute package {text}, 
+      properties, 
+      testcase*, 
+      element system-out {text}, 
+      element system-err {text} 
+   } 
+} 
+
+testsuites = element testsuites { 
+   testsuite* 
+}
