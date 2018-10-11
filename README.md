@@ -12,13 +12,13 @@ Go version 1.1 or higher is required. Install or update using the `go get`
 command:
 
 ```bash
-go get -u github.com/uncleking/junit-go
+go get -u github.com/UncleKing/junit-go
 ```
 
 ## Contribution
 
 Create an Issue and discuss the fix or feature, then fork the package.
-Clone to github.com/uncleking/junit-go.  This is necessary because go import uses this path.
+Clone to github.com/UncleKing/junit-go.  This is necessary because go import uses this path.
 
 ## Run Tests
 go test
@@ -26,7 +26,7 @@ go test
 ## Usage
 Please check the test code to see how the library can be used.
 
-[travis-badge]: https://travis-ci.org/uncleking/junit-go.svg
-[travis-link]: https://travis-ci.org/uncleking/junit-go
-[report-badge]: https://goreportcard.com/badge/github.com/uncleking/junit-go
-[report-link]: https://goreportcard.com/report/github.com//uncleking/junit-go
+[travis-badge]: https://travis-ci.org/UncleKing/junit-go.svg
+[travis-link]: https://travis-ci.org/UncleKing/junit-go
+[report-badge]: https://goreportcard.com/badge/github.com/UncleKing/junit-go
+[report-link]: https://goreportcard.com/report/github.com/UncleKing/junit-go
