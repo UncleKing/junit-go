@@ -255,7 +255,6 @@ func TestValidateXmlWithProp(t *testing.T) {
 	//fmt.Printf(str)
 }
 
-
 func TestValidateXmlFile(t *testing.T) {
 	tr := TestRun{}
 	var props Properties
@@ -279,7 +278,6 @@ func TestValidateXmlFile(t *testing.T) {
 	ts2.AddTestCase("test1", "validity", "time", &ts2Fail, "a\nb\nc", "")
 
 	ts2.AddTestCase("test1", "validity", "time", nil, "a\nb\nc", "")
-
 
 	err := tr.WriteToFile("out.xml")
 	assert.NoError(t, err, "Save to file shouldn't fail")
