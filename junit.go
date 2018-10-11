@@ -1,4 +1,4 @@
-package main
+package junitgo
 
 import (
 	"encoding/xml"
