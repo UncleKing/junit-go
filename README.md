@@ -27,6 +27,6 @@ go test
 Please check the test code to see how the library can be used.
 
 [travis-badge]: https://travis-ci.org/uncleking/junit-go.svg
-[travis-link]: https://travis-ci.org//uncleking/junit-go
+[travis-link]: https://travis-ci.org/uncleking/junit-go
 [report-badge]: https://goreportcard.com/badge/github.com/uncleking/junit-go
 [report-link]: https://goreportcard.com/report/github.com//uncleking/junit-go
