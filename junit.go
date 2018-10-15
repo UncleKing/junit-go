@@ -50,6 +50,7 @@ type TestSuite struct {
 
 type TestRun struct {
 	XMLName    xml.Name `xml:"testsuites"`
+	Name       string   `xml:"name,attr,omitempty"`
 	TestSuites []*TestSuite
 }
 
