@@ -5,6 +5,7 @@ expect junit xml reports (e.g. [Jenkins](http://jenkins-ci.org)).
 
 [![Build Status][travis-badge]][travis-link]
 [![Report Card][report-badge]][report-link]
+[![Code Coverage](https://codecov.io/gh/UncleKing/junit-go/branch/master/graph/badge.svg)](https://codecov.io/gh/UncleKing/junit-go)
 
 ## Installation
 
